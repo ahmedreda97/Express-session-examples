@@ -3,7 +3,7 @@ const app=express();
 
 app.get('/',(req,res)=>{
     res.send('hello this is main page');
-    res.end();
+    
 });
 
 app.get('/ahmed',(req,res)=>{

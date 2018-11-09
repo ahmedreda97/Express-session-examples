@@ -26,7 +26,7 @@ mongoose.connect('mongodb://localhost/library',{useNewUrlParser:true});
             
             if(err){console.log(err);} // handle it
             res.send({book:book.name});
-            res.end();
+            
 
         });
     });

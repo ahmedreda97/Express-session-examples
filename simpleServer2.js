@@ -4,14 +4,14 @@ const server=http.createServer((req,res)=>{
     if(req.url=='/'){
       res.write("hello this is main page");
     }
-    else if(req.url=='/ahmed'){
+    else if(req.url=='/ahmed'){ 
         res.write('hello this is ahmed page');
     }
     else if(req.url=='/reda'){
         res.write('hello this is reda page');
     }
 
-res.end();
+//res.end();
 });
 
 server.listen(3000,()=>{

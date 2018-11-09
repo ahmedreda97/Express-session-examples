@@ -4,12 +4,13 @@ const app=express();
 
 
 app.get('/username/:name(\ahmed|reda\)', (req, res) => {
-    res.send('Hello MR '+req.params.name);
+    res.write('Hello MR '+req.params.name);
     res.end();
+   console.log('hh');
 });
-app.get('/username/:name(\a+\)', (req, res) => {
-    res.send('Hello SIR '+req.params.name);
-    res.end();
+app.get('/username/:id(\a+\)', (req, res) => {
+    res.send('Hello SIR '+req.params.id);
+   
 });
 app.get('/username/:name', (req, res) => {
     res.send('HI '+req.params.name);

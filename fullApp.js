@@ -1,5 +1,5 @@
 var express=require('express');
-const router=require('./routingModule2.js').userRouter;
+const router=require('./userRouter.js').userRouter;
 const app=express();
 
 
